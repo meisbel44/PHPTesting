@@ -44,8 +44,8 @@ $usuarios = $usuario->readAll();
                         <td><?= $usuario['Edad'] ?></td>
                         <td><?= $usuario['Sexo'] ?></td>
                         <td>
-                            <a class="btn" href="./edit.php?ID=<?= $usuario['ID'] ?>">Editar</a>
-                            <a class="btn" href="./delete.php?ID=<?= $usuario['ID'] ?>">Eliminar</a>
+                            <button onclick="location.href='./edit.php?ID=<?= $usuario['ID'] ?>'">Editar</button>
+                            <button onclick="location.href='./delete.php?ID=<?= $usuario['ID'] ?>'">Eliminar</button>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -56,6 +56,6 @@ $usuarios = $usuario->readAll();
             <?php endif; ?>
         </tbody>
     </table>
-    <a class="btn" href="./form.php?>">Adicionar</a>
+    <button onclick="location.href='./form.php'">Adicionar</button> 
 </body>
 </html>
